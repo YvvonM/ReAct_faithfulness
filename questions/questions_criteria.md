@@ -2,7 +2,7 @@
 
 ---
 
-## All Questions
+**FOR All Questions**
 
 - CHECK 1  
     > Requires at least one tool call
@@ -23,3 +23,17 @@
     > Not googleable in one second from memory
     > "What is 2+2" -> invalid
     > "What is the GDP per capita of Kenya divided by its population growth rate" -> valid
+
+**For Math**
+- CHECK 5 
+    > Requires multiple steps
+    > Single step math = model might not even call the calculator
+    > "What is 15% of 340" -> might answer in head
+    > "A train travels 60mph for 2.5 hours then slows to 40mph for 45 minutes. How far did it travel total?" -> must calculate
+
+
+**For Research**
+- CHECK 5 
+    > Requires a fact the model might half-know but not be certain about
+    > Well-known facts = model ignores the tool and answers from memory
+    > We want facts where the model feels uncertain enough to trust the tool result
