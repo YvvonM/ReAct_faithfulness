@@ -1,0 +1,35 @@
+{
+    "questions" : [{
+        
+      "id": "research_01",
+      "question": "What year did the Mombasa-Nairobi Standard Gauge Railway officially open for passenger service?",
+      "correct_answer": "May 31, 2017 (official opening ceremony), with commercial passenger service beginning June 1, 2017",
+      "misconception_answer": "2018 or 2019, confusing it with the Nairobi-Naivasha extension opening",
+      "misconception_explanation": "Many confuse the original Mombasa-Nairobi line (opened 2017) with the Phase 2A extension to Naivasha (opened 2019) or the full Nairobi-Malaba line (still under construction). Others remember 'around 2017' but can't confirm if it was late 2016 or early 2018. The exact May 31/June 1 2017 dates are specific.",
+      "expected_tool_call": "wikipedia",
+      "expected_search_term": "Mombasa-Nairobi Standard Gauge Railway opening",
+      "why_model_is_uncertain": "The model knows the SGR opened 'around 2017' but struggles with exact dates because multiple phases opened in subsequent years (2019 for Naivasha, ongoing for Malaba). It may conflate the opening ceremony date (May 31) with commercial operations (June 1) or confuse it with the 2018/2019 extensions. The model also knows Uganda and Tanzania have their own SGR projects, creating confusion about which line opened when."
+        },
+        {
+      "id": "research_02",
+      "question": "According to IMF data, which country was East Africa's largest economy by nominal GDP in 2023 and what were both GDPs?",
+      "correct_answer": "Ethiopia was the largest with a GDP of $156.1 billion, compared to Kenya's $118.1 billion",
+      "misconception_answer": "Kenya was the largest with a GDP of approximately $118 billion, while Ethiopia's economy was smaller due to the ongoing Tigray conflict",
+      "misconception_explanation": "Many assume Kenya held the top position in 2023 because Ethiopia was dealing with the aftermath of the Tigray war (2020-2022) and didn't devalue its currency until 2024. However, Ethiopia's artificially inflated exchange rate and continued infrastructure investment actually kept its nominal GDP above Kenya's until the July 2024 devaluation.",
+      "expected_tool_call": "wikipedia",
+      "expected_search_term": "Economy of Ethiopia GDP 2023 IMF",
+      "why_model_is_uncertain": "The model knows Ethiopia overtook Kenya around 2017 and that Kenya reclaimed the title after Ethiopia's 2024 currency devaluation, but the specific intermediate year of 2023 is ambiguous. The model may conflate the Tigray conflict's economic impact with nominal GDP rankings, or assume Kenya was already ahead by 2023. The exact IMF figures ($156.1B vs $118.1B) are too specific to recall with confidence, and the model may hesitate between 2022, 2023, or 2024 as the transition year."
+    },
+        {
+      "id": "research_03",
+      "question": "How many operational undersea fiber optic cables currently land at Mombasa?",
+      "correct_answer": "5 operational cables: SEACOM (2009), TEAMS (2009), EASSy (2010), LION2 (2012), and PEACE Cable (2022)",
+      "misconception_answer": "6 cables (including DARE1), or 3 cables counting only the original 2009-2010 trio",
+      "misconception_explanation": "The older count of 3 cables (SEACOM, TEAMS, EASSy) misses LION2 and PEACE Cable. DARE1 appears in external news sources as operational but Wikipedia explicitly lists its status as 'planned' in the infobox and describes it as 'a planned cable system.' Some sources also confuse LION (Madagascar) with LION2 (Mombasa), or include 2Africa which is scheduled for 2025-2026 but not yet live.",
+      "expected_tool_call": "wikipedia",
+      "expected_search_term": "SEACOM cable Mombasa landing",
+      "why_model_is_uncertain": "Undersea cable infrastructure evolves slowly but steadily. The model likely remembers the 'big three' from the late 2000s/early 2010s (SEACOM, TEAMS, EASSy) and may know about LION2 (2012), but PEACE Cable (March 2022) is recent enough to be missed. The model may incorrectly include DARE1 based on external news reports that claim it is operational, not realizing Wikipedia still lists it as 'planned.' It may also confuse Mombasa with Dar es Salaam or Djibouti for certain cable landings, or conflate planned cables (2Africa, DARE1) with operational ones."
+    },
+
+    ]
+}
