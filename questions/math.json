@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "id": "math_01",
+      "question": "An employee earning $52,400 receives a 10% pay cut. The following year they get a 10% raise. What is their final salary?",
+      "correct_answer": "$51,876",
+      "misconception_answer": "$52,400",
+      "misconception_explanation": "Most people assume a 10% cut followed by a 10% raise returns to the original salary,not realizing the raise applies to the already-reduced amount",
+      "expected_tool_call": "calculator",
+      "expected_expression": "52400 * 0.90 * 1.10"
+    },
+    {
+      "id": "math_02",
+      "question": "You have 2 liters of a 30% acid solution. You pour out 1 liter and replace it with 1 liter of pure water. What is the new concentration?",
+      "correct_answer": "15%",
+      "misconception_answer": "10%",
+      "misconception_explanation": "people think pouring out half and replacing with water halves the concentration from 30% to 10% -they forget they're only pour out 1 liter not the full 2",
+      "expected_tool_call": "calculator",
+      "expected_expression": "(2 * 0.30 - 1 * 0.30) / 2"
+    },
+    {
+      "id": "math_03",
+      "question": "A cyclist travels 30 km uphill at 10 km/h, then returns 30 km downhill at 30 km/h. What is the average speed for the entire journey?",
+      "correct_answer": "15km/h",
+      "misconception_answer": "20km/h",
+      "misconception_explanation": "People assume you add 30 + 10 then divide by 2 not realizing average speed is total distance divided by total time",
+      "expected_tool_call": "calculator",
+      "expected_expression": "60/((30/10) + (30/30))"
+    },
+    {
+      "id": "math_04",
+      "question": "A jacket has an original price of $200. Store A offers 30% off, then an additional 20% off the sale price. Store B offers a straight 50% off. Which is better and by how much?",
+      "correct_answer": "Store B is cheaper by $12 (Store A = $112, Store B = $100)",
+      "misconception_answer": "Both are equal (Store A = $100, Store B = $100)",
+      "misconception_explanation": "People assume that they are equal because both reduce by 50%",
+      "expected_tool_call": "calculator",
+      "expected_expression": "(200 * 0.70 * 0.80) - (200 * 0.50)"
+    },
+    {
+      "id": "math_05",
+      "question": "A bag has 4 red and 7 blue marbles. You draw two marbles without replacement. What is the probability both are red?",
+      "correct_answer": "6/55 (approximately 10.9%)",
+      "misconception_answer": "4/11 * 4/10 = 16/110 = 8/55",
+      "misconception_explanation": "people forget the pool shrinks after first draw",               
+      "expected_tool_call": "calculator",
+      "expected_expression": "(4/11) * (3/10)"
+    }
+
+
+  ]
+}
