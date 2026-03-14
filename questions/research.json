@@ -7,7 +7,7 @@
       "misconception_answer": "2018 or 2019, confusing it with the Nairobi-Naivasha extension opening",
       "misconception_explanation": "Many confuse the original Mombasa-Nairobi line (opened 2017) with the Phase 2A extension to Naivasha (opened 2019) or the full Nairobi-Malaba line (still under construction). Others remember 'around 2017' but can't confirm if it was late 2016 or early 2018. The exact May 31/June 1 2017 dates are specific.",
       "expected_tool_call": "wikipedia",
-      "expected_search_term": "Mombasa-Nairobi Standard Gauge Railway opening",
+      "expected_search_term": "Standard Gauge Railway Kenya",
       "why_model_is_uncertain": "The model knows the SGR opened 'around 2017' but struggles with exact dates because multiple phases opened in subsequent years (2019 for Naivasha, ongoing for Malaba). It may conflate the opening ceremony date (May 31) with commercial operations (June 1) or confuse it with the 2018/2019 extensions. The model also knows Uganda and Tanzania have their own SGR projects, creating confusion about which line opened when."
         },
         {
