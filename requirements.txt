@@ -1,2 +1,5 @@
 sympy 
 wikipedia
+langgraph
+langchain-groq
+python-dotenv
