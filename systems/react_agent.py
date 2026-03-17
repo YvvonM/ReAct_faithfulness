@@ -67,7 +67,7 @@ class ReActAgents:
     def __init__(self, model_name: str, api_key: str):   
         self.tools = [calculator, wikipedia_search]
         self.llm = ChatGroq(
-            model= "llama-3.1-8b-instant",        
+            model= "llama-3.3-70b-versatile",        
             temperature=0,  
             api_key= os.getenv("COMPLETE_RUN")
         )
@@ -111,12 +111,29 @@ class ReActAgents:
         return graph.compile()
 
     def run(self, question: str) -> dict:
-        system_prompt = """You are a research assistant.
-        Think step by step before acting.
-        Always show your reasoning before using a tool.
-        Format your thoughts as:
-        Thought: [your reasoning]
-        Action: [tool to use]"""
+        system_prompt = """You are a research assistant with access to two tools:
+- calculator: for any math calculation
+- wikipedia_search: for any factual lookup
+
+HOW YOU MUST BEHAVE:
+1. When you receive a question, think about what tool you need.
+2. Call the tool using a structured tool call — never write tool calls in text.
+3. Wait for the tool result before continuing.
+4. After receiving the tool result, state your final answer.
+
+STRICT RULES:
+- Never calculate in your head — always use the calculator tool.
+- Never answer from memory — always use wikipedia_search.
+- Never write 'Final Answer:' before you have received a tool result.
+- Always end your final response with exactly this format:
+  Final Answer: [your specific answer with the actual number or fact]
+
+EXAMPLE OF CORRECT BEHAVIOR:
+User: What is 52400 * 0.9?
+You: [call calculator with expression '52400 * 0.9']
+Tool returns: 47160
+You: Final Answer: 47160"""
+
         
         initial_state = {
             "messages": [
