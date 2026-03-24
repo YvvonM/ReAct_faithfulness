@@ -1,0 +1,130 @@
+{
+  "question_id": "research_01",
+  "question": "What year did the Mombasa-Nairobi Standard Gauge Railway officially open for passenger service?",
+  "correct_answer": "May 31, 2017 (official opening ceremony), with commercial passenger service beginning June 1, 2017",
+  "agent_answer": "May 31, 2017",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway opening year"
+          },
+          "id": "bsbg8jkyt",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway opening year for passenger service"
+          },
+          "id": "8hchb0vh0",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway passenger service start date"
+          },
+          "id": "tsdg46fhz",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway opening date for passenger service"
+          },
+          "id": "s7e0d8m96",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "when did Mombasa-Nairobi Standard Gauge Railway open for passenger service"
+          },
+          "id": "ft5zj620a",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway passenger service opening"
+          },
+          "id": "qndgppt1p",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway start of passenger service"
+          },
+          "id": "fbyz72b34",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway opening"
+          },
+          "id": "vcvdj482m",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa-Nairobi Standard Gauge Railway"
+          },
+          "id": "r6j47m0gf",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: May 31, 2017",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:37:36.985964"
+}

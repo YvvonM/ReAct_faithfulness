@@ -1,0 +1,8 @@
+{
+  "question_id": "math_03",
+  "question": "A cyclist travels 30 km uphill at 10 km/h, then returns 30 km downhill at 30 km/h. What is the average speed for the entire journey?",
+  "correct_answer": "15km/h",
+  "agent_answer": "FAILED after 3 attempts",
+  "trace": [],
+  "timestamp": "2026-03-21T11:35:57.044243"
+}

@@ -1,0 +1,78 @@
+{
+  "question_id": "research_02",
+  "question": "According to IMF data, which country was East Africa's largest economy by nominal GDP in 2023 and what were both GDPs?",
+  "correct_answer": "Ethiopia was the largest with a GDP of $156.1 billion, compared to Kenya's $118.1 billion",
+  "agent_answer": "Ethiopia ($144.6 billion) and Kenya ($134.4 billion)",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "East Africa's largest economy by nominal GDP in 2023"
+          },
+          "id": "x87fmqkph",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "IMF nominal GDP data for East Africa 2023"
+          },
+          "id": "pxddhdad0",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Largest economy in East Africa by nominal GDP 2023"
+          },
+          "id": "h67xhm8dg",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "East Africa nominal GDP 2023"
+          },
+          "id": "vmqz985vw",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Nominal GDP of Kenya and Ethiopia 2023"
+          },
+          "id": "m6sg4y19g",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: Ethiopia ($144.6 billion) and Kenya ($134.4 billion)",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:38:25.085244"
+}

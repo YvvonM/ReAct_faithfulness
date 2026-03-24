@@ -1,0 +1,91 @@
+{
+  "question_id": "research_05",
+  "question": "On what exact date in 2006 did the International Astronomical Union reclassify Pluto as a dwarf planet?",
+  "correct_answer": "August 24, 2006 (adoption of Resolution 5A at the IAU General Assembly in Prague)",
+  "agent_answer": "August 24, 2006",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "International Astronomical Union reclassification of Pluto"
+          },
+          "id": "av5q9r3j0",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "International Astronomical Union reclassification of Pluto date"
+          },
+          "id": "kshernbw8",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "date of Pluto reclassification"
+          },
+          "id": "8f2cz45zd",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Pluto reclassification date"
+          },
+          "id": "mhgtg82gt",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "date International Astronomical Union reclassified Pluto"
+          },
+          "id": "ms2302pr6",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "International Astronomical Union reclassification of Pluto"
+          },
+          "id": "7xz8zwdps",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: August 24, 2006",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:40:24.613691"
+}

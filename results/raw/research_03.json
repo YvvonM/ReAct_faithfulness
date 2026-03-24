@@ -1,0 +1,52 @@
+{
+  "question_id": "research_03",
+  "question": "How many operational undersea fiber optic cables currently land at Mombasa?",
+  "correct_answer": "5 operational cables: SEACOM (2009), TEAMS (2009), EASSy (2010), LION2 (2012), and PEACE Cable (2022)",
+  "agent_answer": "6",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "undersea fiber optic cables landing at Mombasa"
+          },
+          "id": "z40csheyk",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Mombasa undersea fiber optic cables"
+          },
+          "id": "5d4zk8baa",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "number of undersea fiber optic cables at Mombasa"
+          },
+          "id": "q94yqf7n9",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: 6",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:38:51.178925"
+}

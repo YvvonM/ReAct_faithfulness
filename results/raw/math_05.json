@@ -1,0 +1,26 @@
+{
+  "question_id": "math_05",
+  "question": "A bag has 4 red and 7 blue marbles. You draw two marbles without replacement. What is the probability both are red?",
+  "correct_answer": "6/55 (approximately 10.9%)",
+  "agent_answer": "6/55",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "calculator",
+          "args": {
+            "expression": "4/11 * 3/10"
+          },
+          "id": "gkp1pgne9",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: 6/55",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:35:57.956473"
+}

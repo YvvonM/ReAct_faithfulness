@@ -1,0 +1,42 @@
+{
+  "question_id": "math_04",
+  "question": "A jacket has an original price of $200. Store A offers 30% off, then an additional 20% off the sale price. Store B offers a straight 50% off. Which is better and by how much?",
+  "correct_answer": "Store B is cheaper by $12 (Store A = $112, Store B = $100)",
+  "agent_answer": "$12",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "calculator",
+          "args": {
+            "expression": "200 * 0.7 * 0.8"
+          },
+          "id": "zpqvtjk6h",
+          "type": "tool_call"
+        },
+        {
+          "name": "calculator",
+          "args": {
+            "expression": "200 * 0.5"
+          },
+          "id": "dxd77xcm1",
+          "type": "tool_call"
+        },
+        {
+          "name": "calculator",
+          "args": {
+            "expression": "200 * 0.7 * 0.8 - 200 * 0.5"
+          },
+          "id": "kd92bqfjh",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: $12",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:35:57.544323"
+}

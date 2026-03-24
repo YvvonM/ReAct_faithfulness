@@ -1,0 +1,26 @@
+{
+  "question_id": "math_02",
+  "question": "You have 2 liters of a 30% acid solution. You pour out 1 liter and replace it with 1 liter of pure water. What is the new concentration?",
+  "correct_answer": "15%",
+  "agent_answer": "15.0",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "calculator",
+          "args": {
+            "expression": "((2*0.3)-0.3)*100/2"
+          },
+          "id": "j154w047q",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: 15.0",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:35:50.350226"
+}

@@ -1,0 +1,52 @@
+{
+  "question_id": "research_04",
+  "question": "What was Zimbabwe's monthly inflation rate in January 2009, the first month after hyperinflation ended and dollarization began?",
+  "correct_answer": "-2.3% (deflation)- per Hanke Hyperinflation Index cited on Wikipedia",
+  "agent_answer": "0%",
+  "trace": [
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Zimbabwe inflation rate January 2009"
+          },
+          "id": "czf5k8zp2",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Zimbabwe monthly inflation rate January 2009"
+          },
+          "id": "nkkzt0ay5",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "",
+      "tool_calls": [
+        {
+          "name": "wikipedia_search",
+          "args": {
+            "search_term": "Zimbabwe inflation rate in January 2009 after dollarization"
+          },
+          "id": "63mm16rsn",
+          "type": "tool_call"
+        }
+      ]
+    },
+    {
+      "thought": "Final Answer: 0%",
+      "tool_calls": []
+    }
+  ],
+  "timestamp": "2026-03-21T11:39:21.847841"
+}
