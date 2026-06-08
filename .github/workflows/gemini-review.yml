@@ -26,9 +26,8 @@ jobs:
       - name: 'Checkout repository'
         uses: 'actions/checkout@v4'
         with:
-          fetch-depth: 0 # Fetches full history so the diff is accurate
+          fetch-depth: 0
 
-      # Step to prevent hitting the 10 Requests Per Minute (RPM) free tier cap
       - name: 'Prevent 429 Rate Limits (Randomized Sleep)'
         run: |
           DELAY=$((10 + RANDOM % 20))
@@ -45,9 +44,10 @@ jobs:
           PULL_REQUEST_NUMBER: '${{ github.event.pull_request.number }}'
           REPOSITORY: '${{ github.repository }}'
           GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}'
+          GEMINI_NON_INTERACTIVE: 'true' # Bypasses the interactive "trust workspace" block
         with:
           gemini_api_key: '${{ secrets.GEMINI_API_KEY }}'
-          gemini_model: 'gemini-2.5-flash' # Locks workflow into the high-capacity free tier model
+          gemini_model: 'gemini-2.5-flash'
           workflow_name: 'gemini-review'
           github_pr_number: '${{ github.event.pull_request.number }}'
           settings: |-
@@ -92,7 +92,5 @@ jobs:
               }
             }
           extensions: |
-            [
-              "https://github.com"
-            ]
+            gemini-cli-extensions/code-review
           prompt: '/pr-code-review --exclude "package-lock.json,yarn.lock,pnpm-lock.yaml,*.min.js,*.dist,*.pstats"'
