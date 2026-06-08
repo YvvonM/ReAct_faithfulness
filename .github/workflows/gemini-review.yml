@@ -44,7 +44,8 @@ jobs:
           PULL_REQUEST_NUMBER: '${{ github.event.pull_request.number }}'
           REPOSITORY: '${{ github.repository }}'
           GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}'
-          GEMINI_NON_INTERACTIVE: 'true' # Bypasses the interactive "trust workspace" block
+          GEMINI_NON_INTERACTIVE: 'true'
+          GEMINI_CLI_TRUST_WORKSPACE: 'true' # Bypasses the new April 2026 workspace trust security block
         with:
           gemini_api_key: '${{ secrets.GEMINI_API_KEY }}'
           gemini_model: 'gemini-2.5-flash'
@@ -92,5 +93,7 @@ jobs:
               }
             }
           extensions: |
-            gemini-cli-extensions/code-review
+            [
+              "gemini-cli-extensions/code-review"
+            ]
           prompt: '/pr-code-review --exclude "package-lock.json,yarn.lock,pnpm-lock.yaml,*.min.js,*.dist,*.pstats"'
